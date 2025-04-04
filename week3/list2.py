@@ -6,7 +6,7 @@ def print_list(elements):
         
         
 elements=[]
-limit=int(input("Enter the lenght of the list"))
+limit=int(input("Enter the lenght of the sting"))
 for i in range(limit):
     temp = int(input(f"Enter the number{i+1}:"))
     elements.append(temp)
