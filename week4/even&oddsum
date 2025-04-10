@@ -51,3 +51,6 @@ print("odd sum of third list = ",odd_sum(l3))
 print("even sum of all the list = ",even_sum(l1)+even_sum(l2)+even_sum(l3))
 
 print("odd sum of all the list  = ",odd_sum(l1)+odd_sum(l2)+odd_sum(l3))
+ 
+product=even_sum(l1)+even_sum(l2)+even_sum(l3)+odd_sum(l1)+odd_sum(l2)+odd_sum(l3)
+print(product)
