@@ -1,0 +1,65 @@
+def credit(amount,balance,transations):
+    balance+=amount
+    print(amount,"balance credited successfully")
+    transations.append(amount)
+    return balance,transations
+
+def debit(amount,balance,tramsations):
+    if balance<amount:
+        print("insufficient balance")
+    else:
+        balance-=amount
+        print(amount,"balance dedited successfully")
+        transations.append(amount)
+        return balance,transation
+
+def showbalance(balance):
+    print("\nYOUR CURRENT BALANCE = ",balance)
+
+def lastfive(transaions):
+    print("last five transations")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+balance=0
+transations=[]
+while True:
+    print("welcome to bankapp")
+    print("press 1 for credit")
+    print("press 2 for debit")
+    print("press 3 for show balance")
+    print("press 4 for last five transations")
+    print("press 5 for exit")
+    choice=int(input("enter the choice"))
+    if(choice==1):
+        amount=int(input("enter the amount to be credited"))
+        balance,transations=credit(amount,balance,transations)
+    elif(choice==2):
+        amount=int(input("enter the amount to be debited"))
+        balance,transations=debit(amount,balance,transations)
+    elif(choice==3):
+        showbalance("balance")
+    elif(choice==4):
+        lastfive("transations")
+    else:
+         exit
